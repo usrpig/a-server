@@ -9,7 +9,8 @@ include_directories(${PROJECT_SOURCE_DIR})
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
 
-
+add_subdirectory(include/)
+add_subdirectory(base_1/)
 
 add_executable(build_it_up main.c)
 
