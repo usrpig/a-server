@@ -10,6 +10,16 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <errno.h>
+#include <signal.h>
+
+#define    SERV_PORT      8888
+#define    MAXLINE        4096
+#define    LISTENQ        1024
+#define    BUFFER_SIZE    4096
+
+#define LOG(str)    do { \
+                        printf("err: %s\n", str); \
+                    } while(0)
 
 int get_socket_ser(uint16_t port);
 int get_socket_cli(char *serIP, uint16_t port);

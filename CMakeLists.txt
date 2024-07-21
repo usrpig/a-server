@@ -11,6 +11,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
 
 add_subdirectory(include/)
 add_subdirectory(base_1/)
+add_subdirectory(base_11/)
 
 add_executable(build_it_up main.c)
 
